@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Buttons</title>
+
+</head>
+
+<body>
+    <div class="top-section">
+        <div class="left-links">
+            <div class="logo-and-text">
+                <img class="img-logo" src="https://supersimple.dev/public/img/logo192.png" alt="img-logo">
+                <div class="text">Supersimple.dev</div>
+
+            </div>
+            <div class="learn-link">Learn</div>
+            <div class="Certificates-link">Certificates</div>
+        </div>
+
+        <div class="right-links">
+            <div class="donate">
+                Donate
+            </div>
+            <div class="about">About</div>
+            <div class="contact">contact</div>
+            <div class="show">show</div>
+
+        </div>
+
+    </div>
+    <div class="display-none">
+        <p>learn</p>
+        <p>certificates</p>
+        <p>Donate</p>
+        <p>about</p>
+        <p>Contact</p>
+
+
+    </div>
+
+    <div class="buttons">
+        <div class="btn1">Subscribe</div>
+        <div class="btn2">Join</div>
+        <div class="btn3">Tweet</div>
+    </div>
+    <script>
+        let as = 1;
+        document.querySelector('.show').addEventListener('click', () => {
+            document.querySelector('.display-none').classList.toggle('flex')
+
+        })
+
+
+
+
+        setInterval(() => {
+            if (window.innerWidth >= 760) {
+                document.querySelector('.display-none').classList.remove('flex')
+            }
+        }, 2)
+        document.querySelector('img').onerror=()=>{
+            document.querySelector('img').style.display='none'
+        }
+
+    </script>
+
+
+</body>
+
+</html>
